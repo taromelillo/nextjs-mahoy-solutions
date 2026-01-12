@@ -1,4 +1,5 @@
 import { Github, Twitter, Linkedin } from "lucide-react";
+import { BrandTitle } from "./brand-title";
 
 export function Footer() {
   return (
@@ -192,19 +193,7 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="flex items-center gap-2">
-            <div className="flex h-6 w-6 items-center justify-center rounded bg-primary">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                className="h-4 w-4 text-primary-foreground"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M13 2L3 14h8l-1 8 10-12h-8l1-8z" fill="currentColor" />
-              </svg>
-            </div>
-            <span className="font-semibold">StreamLine</span>
-          </div>
+          <BrandTitle title="Mahoy Solutions" />
           <p className="text-sm text-muted-foreground">
             © 2025 StreamLine. All rights reserved.
           </p>
