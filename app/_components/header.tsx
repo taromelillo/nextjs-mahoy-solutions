@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 
 import { MobileNavbar } from "./navbar";
+import { BrandTitle } from "./brand-title";
 
 export function Header() {
   return (
@@ -10,19 +11,7 @@ export function Header() {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                className="h-5 w-5 text-primary-foreground"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M13 2L3 14h8l-1 8 10-12h-8l1-8z" fill="currentColor" />
-              </svg>
-            </div>
-            <span className="text-xl font-semibold">StreamLine</span>
-          </div>
+          <BrandTitle title="Mahoy Solutions" size="normal" />
 
           {/* Desktop Navigation */}
 
