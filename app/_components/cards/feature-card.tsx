@@ -18,7 +18,9 @@ export const FeatureCard = ({ icon: Icon, title, description }: Props) => {
         <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
           <Icon className="h-6 w-6 text-primary" />
         </div>
-        <CardTitle className="text-xl font-semibold mb-2">{title}</CardTitle>
+        <CardTitle className="text-xl font-semibold mb-2">
+          <h3>{title}</h3>
+        </CardTitle>
       </CardHeader>
       <CardContent>
         <p className="text-muted-foreground leading-relaxed">{description}</p>
